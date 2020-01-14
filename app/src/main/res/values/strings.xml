@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pname+</string>
+    <string name="caption_pname">Package name:</string>
+    <string name="example_pname">com.google.android.gm</string>
+    <string name="caption_open">Open in Play Store</string>
+    <string name="error_invalid">Invalid package name</string>
+</resources>

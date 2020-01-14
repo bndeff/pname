@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/caption_pname" />
+
+    <EditText
+        android:id="@+id/input_pname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/example_pname"
+        android:inputType="textUri"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/button_open"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openAppLink"
+        android:text="@string/caption_open" />
+</LinearLayout>
