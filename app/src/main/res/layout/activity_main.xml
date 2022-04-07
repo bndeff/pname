@@ -19,13 +19,13 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/example_pname"
+        android:importantForAutofill="no"
         android:inputType="textUri"
-        android:importantForAutofill="no" />
+        android:minHeight="48dp" />
 
     <Button
         android:id="@+id/button_open"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="openAppLink"
         android:text="@string/caption_open" />
 </LinearLayout>

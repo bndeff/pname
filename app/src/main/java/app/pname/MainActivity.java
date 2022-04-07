@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findViewById(R.id.button_open).setOnClickListener(this::openAppLink);
     }
 
-    @SuppressWarnings("unused")
     public void openAppLink(View view) {
-        EditText input = this.findViewById(R.id.input_pname);
+        EditText input = findViewById(R.id.input_pname);
         String packageName = input.getText().toString().trim();
         Pattern pattern = Pattern.compile("[a-z][a-z0-9_]*(\\.[a-z][a-z0-9_]*)+", Pattern.CASE_INSENSITIVE);
         if(pattern.matcher(packageName).matches()) {
